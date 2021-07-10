@@ -157,9 +157,9 @@ export default function Contact() {
             </Body>
             <Footer>
                 <Links>
-                    <a href="">{icons.github.icon}</a>
-                    <a href="">{icons.medium.icon}</a>
-                    <a href="">{icons.linkedin.icon}</a>
+                    <a>{icons.github.icon}</a>
+                    <a>{icons.medium.icon}</a>
+                    <a>{icons.linkedin.icon}</a>
                 </Links>
                 <HireButton>Hire me!</HireButton>
             </Footer>
