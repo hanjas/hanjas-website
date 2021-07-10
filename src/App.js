@@ -5,7 +5,6 @@ import WelcomePage from './components/WelcomePage';
 import WhatIKnow from './components/WhatIKnow';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
-import Particles from './components/Particles';
 
 class App extends Component {
 
@@ -16,7 +15,6 @@ class App extends Component {
         <WhatIKnow />
         <Blogs />
         <Contact />
-        {/* <Particles/> */}
       </div>
     );
   }

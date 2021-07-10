@@ -3,80 +3,71 @@ import styled from 'styled-components'
 
 import icons from '../lib/utils/icons'
 
-export default function WhatIKnow() {
+const Main = styled.div`
+    // width: 1600px;
+    // margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    background: #F2F2F2;
+`;
 
-    const Main = styled.div`
-        // width: 1600px;
-        // margin: 0 auto;
-        height: 80vh;
-        display: flex;
-        background: #F2F2F2;
-    `;
+const LeftSide = styled.div`
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
-    const LeftSide = styled.div`
-        width: 650px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    `;
+const LeftLabel = styled.div`
+    font-family: 'Montserrat';
+    color: #585858;
+    font-size: 50px;
 
-    const LeftLabel = styled.div`
+    div {
         font-family: 'Montserrat';
-        color: #585858;
-        font-size: 50px;
+        font-size: 70px;
+    }
+`;
 
-        div {
-            font-family: 'Montserrat';
-            font-size: 70px;
-        }
-    `;
+const RightSide = styled.div`
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
 
-    const RightSide = styled.div`
-        padding: 0 50px;
+    .parent {
+        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex: 1;
+    }
 
-        .parent {
-            width: 100%;
-            display: flex;
-        }
+    .iconGrid {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+      
+      .iconGrid-i {
+        width: 125px;
+        text-align: center;
+        margin: 0 0 40px; 
+    }
+      
+      .iconGrid-i svg {
+        width: 50px;
+        margin-bottom: 10px;
+        filter: grayscale(1);
+        transition: 200ms filter; 
+    }
+      
+      .iconGrid-i:hover svg {
+        filter: none; 
+    }
+`;
 
-        .iconGrid {
-            width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap; 
-        }
-          
-          .iconGrid-i {
-            width: 125px;
-            text-align: center;
-            margin: 0 0 40px; 
-        }
-          
-          .iconGrid-i svg {
-            width: 50px;
-            margin-bottom: 10px;
-            filter: grayscale(1);
-            transition: 200ms filter; 
-        }
-          
-          .iconGrid-i:hover svg {
-            filter: none; 
-        }
-    `;
-
-    const Cards = styled.div`
-        width: 95%;
-        height: 92.5px;
-        background: #fff;
-        margin: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 8px 23px rgba(121, 116, 175, 0.1);
-    `;
+export default function WhatIKnow() {
 
 
 

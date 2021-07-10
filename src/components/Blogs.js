@@ -3,6 +3,116 @@ import styled from 'styled-components'
 
 import medium from '../public/medium.svg'
 
+const Blog = styled.div`
+    height: 90vh;
+    // padding: 60px 40px;
+    position: relative;
+`;
+
+const Title = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const TitleContent = styled.div`
+    width: 100%;
+    height: 62px;
+    margin-top: 99px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    // line-height: 102%;
+    text-align: center;
+    color: #585858;
+
+    .titlebg {
+        width: 100%;
+        font-family: 'Montserrat-Normal';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 110px;
+        text-align: center;
+        
+        color: #F1F1F1;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: -1;
+    }
+`;
+
+const Content = styled.div`
+    widht: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+`;
+
+const CardContainer = styled.div`
+    width: 1442px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`;
+
+const Card = styled.div`
+    width: 357px;
+    height: 500px;
+    box-shadow: 0px 8px 23px rgba(121, 116, 175, 0.4);
+    border-radius: 14px;
+    overflow: hidden;
+
+    .header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        height: 130px;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .body {
+        height: 225px;
+        padding: 20px;
+        color: #3A3A3A;
+        line-height: 29px;
+        font-family: 'ProximaNova';
+    }
+    .footer {
+
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 80px;
+        }
+    }
+`;
+
+const Link = styled.a`
+    width: 134px;
+    height: 40px;
+    left: 262px;
+    top: 2069px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    
+    background: #000000;
+    border-radius: 29.5px;
+`;
+
 export default function Blogs() {
 
     const blogs = [
@@ -27,120 +137,10 @@ export default function Blogs() {
             img: "https://miro.medium.com/max/16668/1*htNbPUpyseYGhPohu9SZ7Q.jpeg",
             link: "https://hanjas.medium.com/how-to-write-your-own-date-library-in-15mins-da105b039b78"
         }
-    ]
-
-    const Blogs = styled.div`
-        height: 90vh;
-        // padding: 60px 40px;
-        position: relative;
-    `;
-
-    const Title = styled.div`
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    `;
-
-    const TitleContent = styled.div`
-        width: 100%;
-        height: 62px;
-        margin-top: 99px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 50px;
-        // line-height: 102%;
-        text-align: center;
-        color: #585858;
-
-        .titlebg {
-            width: 100%;
-            font-family: 'Montserrat-Normal';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 110px;
-            text-align: center;
-            
-            color: #F1F1F1;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            z-index: -1;
-        }
-    `;
-
-    const Content = styled.div`
-        widht: 100%;
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-    `;
-
-    const CardContainer = styled.div`
-        width: 1442px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    `;
-
-    const Card = styled.div`
-        width: 357px;
-        height: 500px;
-        box-shadow: 0px 8px 23px rgba(121, 116, 175, 0.4);
-        border-radius: 14px;
-        overflow: hidden;
-
-        .header {
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            height: 130px;
-            position: relative;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-            }
-        }
-        .body {
-            height: 225px;
-            padding: 20px;
-            color: #3A3A3A;
-            line-height: 29px;
-            font-family: 'ProximaNova';
-        }
-        .footer {
-
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                width: 80px;
-            }
-        }
-    `;
-
-    const Link = styled.a`
-        width: 134px;
-        height: 40px;
-        left: 262px;
-        top: 2069px;
-        text-align: center;
-        line-height: 40px;
-        text-decoration: none;
-        color: #fff;
-        
-        background: #000000;
-        border-radius: 29.5px;
-    `;
+    ];
 
     return (
-        <Blogs>
+        <Blog>
             <Title>
                 <TitleContent>MY BLOGS
                     <div className="titlebg">MY BLOGS</div>
@@ -162,6 +162,6 @@ export default function Blogs() {
                     ))}
                 </CardContainer>
             </Content>
-        </Blogs>
+        </Blog>
     )
 }
