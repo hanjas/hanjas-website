@@ -4,8 +4,6 @@ import styled from 'styled-components'
 import icons from '../lib/utils/icons'
 
 const Main = styled.div`
-    // width: 1600px;
-    // margin: 0 auto;
     height: 80vh;
     display: flex;
     background: #F2F2F2;
@@ -72,43 +70,32 @@ export default function WhatIKnow() {
 
 
 
-    // const 
     const wik = [
+        'js',
         'nodejs',
         'express',
-        'docker',
-        'git',
-        // 'github',
-        'js',
-        'mysql',
-        'nginx',
-        'npm',
-        'postgres',
+        'java',
         'python',
+        'git',
         'ubuntu',
-        // 'vscode',
-        'webpack',
-        'babel',
-        'sass',
-        'd3',
-        'react',
-        // 'photoshop',
-        // 'xd',
-        // 'ai',
-        'redux',
-        // 'angular',
+        'kafka',
         'aws',
-        'figma',
         'firebase',
         'gcloud',
-        // 'graphql',
-        // 'heroku',
-        'java',
         'laravel',
         'socketio',
-        // 'threejs',
+        'cassandra',
+        'mqtt',
+
+        'docker',
+        'nginx',
+        'mysql',
+        'npm',
+        'postgres',
+        'react',
+        'redux',
+        'figma',
     ];
-    // const wik = [[{},{},{},{}],[{},{},{},{}],[{},{},{},{}],[{},{},{},{}]];
 
     return (
         <Main>
@@ -127,21 +114,6 @@ export default function WhatIKnow() {
                         </div>
                     })}
                 </div>
-                 
-                {/* {
-                    
-                    wik.map( (list)=>(<div className="parent">
-                        {list.map((item)=>(<Cards></Cards>))}
-                    </div>) )
-
-
-                    // wik.map( (list)=>(
-                    //     list.map((item)=>(<Cards></Cards>))
-                    //  ) )
-
-                 } */}
-                 
-                {/* {wik.map((item) => (<Cards></Cards>))} */}
 
             </RightSide>
         </Main>

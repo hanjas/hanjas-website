@@ -86,6 +86,7 @@ const ContactDetails = styled.div`
             font-family: 'ProximaNova';
             font-size: 25px;
             line-height: 28px;
+            opacity: 0.7;
         }
     }
 `;
@@ -109,13 +110,8 @@ const HireButton = styled.button`
 `;
 
 const Links = styled.div`
-    // position: absolute;
-    // left: 60px;
-    // botton: 100px;
-
     width: 200px;
     display: flex;
-    // justify-content: space-between;
 
     svg {
         filter: grayscale(1);
