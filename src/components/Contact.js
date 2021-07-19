@@ -10,6 +10,9 @@ const Main = styled.div`
 
     @media ${device.mobile} {
         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 `;
 
@@ -62,9 +65,9 @@ const Body = styled.div`
     align-items: center;
 
     @media ${device.mobile} {
-        height: 277px;
+        height: 320px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 `;
 
@@ -119,7 +122,7 @@ const ContactDetails = styled.div`
 
     @media ${device.mobile} {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
 
         .details {
             flex: 1;
@@ -155,6 +158,7 @@ const HireButton = styled.button`
 
     @media ${device.mobile} {
         width: 100%;
+        display: none;
     }
 `;
 
@@ -174,6 +178,7 @@ const Links = styled.div`
     }
 
     @media ${device.mobile} {
+        margin-top: 40px;
         justify-content: space-between;
     }
 `;
@@ -194,8 +199,6 @@ export default function Contact() {
                         {icons.mobile.icon}
                         {icons.mail.icon}
                         {icons.address.icon}
-                        {/* <img src={mail} alt="mail" />
-                        <img src={address} alt="address" /> */}
                     </div>
                     <div className="details">
                         <div>+91 77 36 988892</div>

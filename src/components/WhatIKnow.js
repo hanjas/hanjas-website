@@ -35,18 +35,17 @@ const LeftLabel = styled.div`
     color: #585858;
     font-size: 50px;
 
-    @media ${device.mobile} { 
-        font-size: 30px;
-    }
-
     div {
         font-family: 'Montserrat';
         font-size: 70px;
+    }
 
+    @media ${device.mobile} { 
+        font-size: 40px;
 
-        @media ${device.mobile} { 
+        div {
             display: inline;
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 `;
