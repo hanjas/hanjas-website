@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { device } from '../lib/utils/devices'
 
 import medium from '../public/medium.svg'
 
@@ -7,6 +8,12 @@ const Blog = styled.div`
     height: 90vh;
     // padding: 60px 40px;
     position: relative;
+    // background: red;
+
+    @media ${device.mobile} { 
+        // width: 40px;
+        height: 225vh;
+    }
 `;
 
 const Title = styled.div`
@@ -41,6 +48,16 @@ const TitleContent = styled.div`
         left: 0;
         z-index: -1;
     }
+
+    @media ${device.mobile} {
+        font-size: 40px;
+        margin-top: 58px;
+
+        .titlebg {
+            font-size: 60px;
+            top: 45px;
+        }
+    }
 `;
 
 const Content = styled.div`
@@ -48,6 +65,10 @@ const Content = styled.div`
     margin-top: 100px;
     display: flex;
     justify-content: center;
+
+    @media ${device.mobile} {
+        margin-top: 50px;
+    }
 `;
 
 const CardContainer = styled.div`
@@ -56,6 +77,10 @@ const CardContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media ${device.mobile} {
+        flex-direction: column;
+    }
 `;
 
 const Card = styled.div`
@@ -96,6 +121,11 @@ const Card = styled.div`
         img {
             width: 80px;
         }
+    }
+
+    @media ${device.mobile} {
+        width: 340px;
+        margin-bottom: 50px;
     }
 `;
 

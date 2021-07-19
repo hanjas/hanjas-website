@@ -2,11 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 import icons from '../lib/utils/icons'
+import { device } from '../lib/utils/devices'
 
 const Main = styled.div`
     height: 80vh;
     display: flex;
     background: #F2F2F2;
+
+    @media ${device.mobile} { 
+        height: 120vh;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const LeftSide = styled.div`
@@ -14,6 +21,13 @@ const LeftSide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
+    @media ${device.mobile} { 
+        width: 100%;
+        margin-top: 50px;
+    }
 `;
 
 const LeftLabel = styled.div`
@@ -21,9 +35,19 @@ const LeftLabel = styled.div`
     color: #585858;
     font-size: 50px;
 
+    @media ${device.mobile} { 
+        font-size: 30px;
+    }
+
     div {
         font-family: 'Montserrat';
         font-size: 70px;
+
+
+        @media ${device.mobile} { 
+            display: inline;
+            font-size: 30px;
+        }
     }
 `;
 
@@ -35,22 +59,30 @@ const RightSide = styled.div`
     flex-direction: column;
     flex: 1;
 
-    .parent {
-        width: 100%;
-        display: flex;
+    @media ${device.mobile} { 
+        padding: 40px;
     }
 
     .iconGrid {
         width: 1000px;
         margin: 0 auto;
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+
+        @media ${device.mobile} { 
+            width: 100%;
+            justify-content: center;
+        }
     }
       
       .iconGrid-i {
         width: 125px;
         text-align: center;
         margin: 0 0 40px; 
+
+        @media ${device.mobile} { 
+            width: 95px;
+        }
     }
       
       .iconGrid-i svg {
@@ -58,6 +90,10 @@ const RightSide = styled.div`
         margin-bottom: 10px;
         filter: grayscale(1);
         transition: 200ms filter; 
+
+        @media ${device.mobile} { 
+            width: 40px;
+        }
     }
       
       .iconGrid-i:hover svg {
@@ -66,9 +102,6 @@ const RightSide = styled.div`
 `;
 
 export default function WhatIKnow() {
-
-
-
 
     const wik = [
         'js',
@@ -100,7 +133,7 @@ export default function WhatIKnow() {
     return (
         <Main>
             <LeftSide>
-                <LeftLabel>WHAT<div>I KNOW</div></LeftLabel>
+                <LeftLabel>WHAT <div>I KNOW</div></LeftLabel>
             </LeftSide>
             <RightSide>
 

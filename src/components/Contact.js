@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import icons from '../lib/utils/icons'
+import { device } from '../lib/utils/devices'
 
 const Main = styled.div`
     height: 80vh;
     padding: 0 60px;
     position: relative;
+
+    @media ${device.mobile} {
+        padding: 30px;
+    }
 `;
 
 const Title = styled.div`
@@ -38,6 +43,16 @@ const TitleContent = styled.div`
         left: 0;
         z-index: -1;
     }
+
+    @media ${device.mobile} {
+        margin-top: 42px;
+        font-size: 28px;
+
+        .titlebg {
+            font-size: 45px;
+            top: 30px;
+        }
+    }
 `;
 
 const Body = styled.div`
@@ -45,12 +60,24 @@ const Body = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${device.mobile} {
+        height: 277px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 `;
 
 const Name = styled.div`
     font-family: 'PalanquinDark';
     font-size: 85px;
     color: #363636;
+
+    @media ${device.mobile} {
+        width: 100%;
+        font-size: 48px;
+        // margin-left: -20px;
+    }
 `;
 
 const ContactDetails = styled.div`
@@ -89,6 +116,19 @@ const ContactDetails = styled.div`
             opacity: 0.7;
         }
     }
+
+    @media ${device.mobile} {
+        width: 100%;
+        margin-top: 20px;
+
+        .details {
+            flex: 1;
+
+            div {
+                font-size: 17px;
+            }
+        }
+    }
 `;
 
 const Footer = styled.div`
@@ -96,6 +136,11 @@ const Footer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ${device.mobile} {
+        flex-direction: column;
+        height: 120px;
+    }
 `;
 
 const HireButton = styled.button`
@@ -107,6 +152,10 @@ const HireButton = styled.button`
     font-family: PalanquinDark;
     font-size: 36px;
     text-align: center;
+
+    @media ${device.mobile} {
+        width: 100%;
+    }
 `;
 
 const Links = styled.div`
@@ -122,6 +171,10 @@ const Links = styled.div`
 
     svg:hover {
         filter: none;
+    }
+
+    @media ${device.mobile} {
+        justify-content: space-between;
     }
 `;
 
