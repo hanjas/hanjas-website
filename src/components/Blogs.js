@@ -146,22 +146,22 @@ const Link = styled.a`
 export default function Blogs() {
 
     const blogs = [
-        {
-            id: 1,
-            title: "How to make your MySQL transactions valuable in Node.js",
-            content: "MySQL transactions come in handy when we deal with multiples queries. Also, we should roll back all queries if one of them failed. We can avoid callback hell which is shown in the document by using promises. In this tutorial, we are going to write a wrapper on top of MySQL library.",
-            publishicon: medium,
-            img: "https://miro.medium.com/max/2000/1*pK8P0MWjU1HiHkR1CDnb2A.jpeg",
-            link: "https://hanjas.medium.com/how-to-make-your-mysql-transactions-valuable-in-node-js-19d62dca8764"
-        },
-        {
-            id: 2,
-            title: "These cassandra utils will save you a lot of time",
-            content: "This article shows you how to implement Cassandra util in your Node.js project. Apache Cassandra is a highly scalable open-source NoSQL database system being the right choice when you need scalability and high availability without compromising performance.",
-            publishicon: medium,
-            img: "https://miro.medium.com/max/2000/1*U2JmThnxLsAG9hsVs-Nz6Q.jpeg",
-            link: "https://hanjas.medium.com/these-cassandra-utils-will-save-you-a-lot-of-time-54e3e0453996"
-        },
+        // {
+        //     id: 1,
+        //     title: "How to make your MySQL transactions valuable in Node.js",
+        //     content: "MySQL transactions come in handy when we deal with multiples queries. Also, we should roll back all queries if one of them failed. We can avoid callback hell which is shown in the document by using promises. In this tutorial, we are going to write a wrapper on top of MySQL library.",
+        //     publishicon: medium,
+        //     img: "https://miro.medium.com/max/2000/1*pK8P0MWjU1HiHkR1CDnb2A.jpeg",
+        //     link: "https://hanjas.medium.com/how-to-make-your-mysql-transactions-valuable-in-node-js-19d62dca8764"
+        // },
+        // {
+        //     id: 2,
+        //     title: "These cassandra utils will save you a lot of time",
+        //     content: "This article shows you how to implement Cassandra util in your Node.js project. Apache Cassandra is a highly scalable open-source NoSQL database system being the right choice when you need scalability and high availability without compromising performance.",
+        //     publishicon: medium,
+        //     img: "https://miro.medium.com/max/2000/1*U2JmThnxLsAG9hsVs-Nz6Q.jpeg",
+        //     link: "https://hanjas.medium.com/these-cassandra-utils-will-save-you-a-lot-of-time-54e3e0453996"
+        // },
         {
             id: 3,
             title: "How to write your own date library in 15mins",
