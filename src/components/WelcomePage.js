@@ -142,7 +142,7 @@ export default function WelcomePage() {
                             <Name>ROSHIN HANJAS</Name>
                         </div>
                         <div>
-                            <Designation>FULLSTACK ENGINEER</Designation>
+                            <Designation>BACKEND ENGINEER</Designation>
                         </div>
                         <div>
                             <Caption>I always take responsibilities for the direction. I Look more broadly at the whole team.</Caption>
